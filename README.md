@@ -1,4 +1,3 @@
-````markdown
 # Análise de Dados — Detecção de Fraudes em Cartões de Crédito
 
 Para a análise de dados, foi utilizado um conjunto de dados disponibilizado pelo Google com transações de cartão de crédito e fraudes dentro dele.
@@ -13,7 +12,7 @@ url = "https://storage.googleapis.com/download.tensorflow.org/data/creditcard.cs
 df = pd.read_csv(url)
 
 df.head()
-````
+```
 
 ## Visualização inicial dos dados
 
@@ -102,8 +101,6 @@ print(classification_report(y_test, y_pred_xgb))
 
 ## Resultado do XGBoost
 
-<!-- COLOCAR IMAGEM AQUI -->
-
 <img width="484" height="171" alt="image" src="https://github.com/user-attachments/assets/2d302bc0-1925-4a80-8e97-7ec88b7ad354" />
 
 Analisando os resultados, podemos ver que o modelo conseguiu detectar cerca de **94% das fraudes em cartões de crédito**.
@@ -116,5 +113,3 @@ O importante sobre os modelos não são apenas os dados sendo extraídos, mas co
 
 A análise mostra como diferentes modelos podem apresentar resultados diferentes utilizando os mesmos dados e como a escolha e configuração desses modelos influenciam diretamente na capacidade de identificar possíveis fraudes.
 
-```
-```
